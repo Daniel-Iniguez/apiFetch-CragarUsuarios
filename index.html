@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>API Fetch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light">
+    <main>
+        <div class="row justify-content-center align-items-center my-3">
+            <button type="button" onclick="buttonClick()" class="btn btn-outline-light"
+                style="width: auto; padding: 8px 20px; font-size: 14px;">Show People</button>
+        </div>
+
+        <section class="loadeer">
+            
+        </section>
+
+        <!-- Tu contenido principal -->
+        <div id="main-content" style="display: none;" class="container">
+            <div class="row text-danger">
+                <article class="col-sm-3 col-lg-3">
+                    <p class="card-text">ID</p>
+                </article>
+                <article class="col-sm-3 col-lg-3">
+                    <p class="card-text">Nombre</p>
+                </article>
+                <article class="col-sm-3 col-lg-3">
+                    <p class="card-text">email</p>
+                </article>
+                <article class="col-sm-3 col-lg-3">
+                    <p class="card-text">Imagen</p>
+                </article>
+            </div>
+            <div class="row mt-5 justify-content-center content" id="elements">
+                <h1 class="text-center">Aqui aparecera el contenido...</h1>
+            </div>
+        </div>
+
+    </main>
+    <script src="./apiFetch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
